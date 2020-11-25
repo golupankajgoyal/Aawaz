@@ -6,19 +6,28 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 public class TrackerActivity extends Activity {
 
     private static final int PERMISSIONS_REQUEST = 1;
-
+    private Button mapButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_tracker);
+        mapButton=findViewById(R.id.map_button);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TrackerActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
         // Check GPS is enabled
         LocationManager lm = (LocationManager) getSystemService(LOCATION_SERVICE);
         if (!lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
