@@ -12,21 +12,26 @@
     <ImageView
         android:id="@+id/textView"
         android:layout_width="60dp"
+        android:layout_margin="10dp"
         android:layout_height="60dp"
         />
     <ImageView
         android:id="@+id/textView1"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_margin="10dp"
+
         />
     <ImageView
         android:id="@+id/textView2"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_margin="10dp"
         />
     <ImageView
         android:id="@+id/textView3"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_margin="10dp"
         />
 </LinearLayout>

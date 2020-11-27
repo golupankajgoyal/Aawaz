@@ -6,10 +6,14 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+import com.bumptech.glide.Glide;
 
 public class TrackerActivity extends Activity {
 
@@ -18,9 +22,38 @@ public class TrackerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tracker);
+
+        ImageView image1 = (ImageView)findViewById(R.id.textView);
+        ImageView image2 = (ImageView)findViewById(R.id.textView1);
+        ImageView image3 = (ImageView)findViewById(R.id.textView2);
+        ImageView image4 = (ImageView)findViewById(R.id.textView3);
+
+
+
+        Glide
+                .with(this)
+                .load(R.drawable.woman)
+                .into(image1);
+
+        Glide
+                .with(this)
+                .load(R.drawable.map)
+                .into(image2);
+        Glide
+                .with(this)
+                .load(R.drawable.emergency)
+                .centerCrop()
+                .into(image3);
+        Glide
+                .with(this)
+                .load(R.drawable.logout)
+                .centerCrop()
+                .into(image4);
 
         // Check GPS is enabled
         LocationManager lm = (LocationManager) getSystemService(LOCATION_SERVICE);
+
         if (!lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             Toast.makeText(this, "Please enable location services", Toast.LENGTH_SHORT).show();
             finish();
@@ -60,4 +93,6 @@ public class TrackerActivity extends Activity {
             finish();
         }
     }
+
+
 }
