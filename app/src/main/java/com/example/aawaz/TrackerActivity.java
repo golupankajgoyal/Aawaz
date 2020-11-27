@@ -35,19 +35,23 @@ public class TrackerActivity extends Activity {
         Glide
                 .with(this)
                 .load(R.drawable.woman)
+                .centerCrop()
                 .into(image1);
 
         Glide
                 .with(this)
                 .load(R.drawable.map)
+                .centerCrop()
                 .into(image2);
         Glide
                 .with(this)
                 .load(R.drawable.emergency)
+                .centerCrop()
                 .into(image3);
         Glide
                 .with(this)
                 .load(R.drawable.logout)
+                .centerCrop()
                 .into(image4);
 
         // Check GPS is enabled

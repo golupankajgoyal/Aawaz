@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_centerHorizontal="true"
+    android:background="#ffcccb"
     tools:context=".TrackerActivity">
 
     <ImageView
@@ -22,19 +23,19 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:padding="10dp"
+        android:padding="13dp"
         android:background="@drawable/circle"
 
 
         />
     <ImageView
         android:id="@+id/textView2"
-        android:layout_width="81dp"
-        android:layout_height="81dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:padding="14dp"
-        android:src="@drawable/map"
+        android:padding="10dp"
         android:background="@drawable/circle"
+
         />
     <ImageView
         android:id="@+id/textView3"
