@@ -11,27 +11,37 @@
 
     <ImageView
         android:id="@+id/textView"
-        android:layout_width="60dp"
+        android:layout_width="80dp"
         android:layout_margin="10dp"
-        android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circle"
         />
     <ImageView
         android:id="@+id/textView1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/circle"
+
 
         />
     <ImageView
         android:id="@+id/textView2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
         android:layout_margin="10dp"
+        android:padding="14dp"
+        android:src="@drawable/map"
+        android:background="@drawable/circle"
         />
     <ImageView
         android:id="@+id/textView3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/circle"
         />
 </LinearLayout>

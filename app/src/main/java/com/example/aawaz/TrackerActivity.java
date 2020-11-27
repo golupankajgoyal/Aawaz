@@ -14,6 +14,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class TrackerActivity extends Activity {
 
@@ -43,12 +44,10 @@ public class TrackerActivity extends Activity {
         Glide
                 .with(this)
                 .load(R.drawable.emergency)
-                .centerCrop()
                 .into(image3);
         Glide
                 .with(this)
                 .load(R.drawable.logout)
-                .centerCrop()
                 .into(image4);
 
         // Check GPS is enabled
