@@ -4,12 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    android:background="#ffcccb"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#ffcccb"
     tools:context=".TrackerActivity">
 
+    <TextView
+        android:id ="@+id/action_bar"
+        android:layout_width = "match_parent"
+        android:layout_height = "48dp"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/rectangle"
+        android:text = "AAWAZ"
+        android:textColor="@color/black"
+        android:fontFamily="@font/atma_medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize = "20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#ffcccb"
+        android:gravity="center"
+        android:orientation="vertical">
 
 
     <LinearLayout
@@ -22,6 +42,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:elevation="10dp"
         android:background="@drawable/circle"
         android:padding="10dp"
         />
@@ -30,11 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:fontFamily="@font/atma_medium"
+            android:text="PROFILE"
+            android:textColor="@color/black"
 
-            android:text="PROFILE" />
+            android:textStyle="bold" />
 
 
 
@@ -49,6 +70,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
+        android:elevation="10dp"
         android:background="@drawable/circle"
         android:padding="13dp"
         />
@@ -57,11 +79,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:fontFamily="@font/atma_medium"
+            android:text="MAPS"
+            android:textColor="@color/black"
 
-            android:text="MAPS" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -74,6 +96,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_gravity="center"
+        android:elevation="10dp"
         android:layout_margin="10dp"
         android:background="@drawable/circle"
         android:padding="10dp"/>
@@ -82,11 +105,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/aubrey"
+            android:text="EMERGENCY CONTACTS"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:fontFamily="@font/atma_medium"
 
-            android:text="EMERGENCY CONTACTS" />
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -97,6 +120,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
+            android:elevation="10dp"
             android:background="@drawable/circle"
             android:padding="10dp"/>
 
@@ -105,8 +129,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/atma_medium"
+            android:text="LOGOUT"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="LOGOUT" />
+            android:textStyle="bold" />
     </LinearLayout>
+
+
+</LinearLayout>
 </LinearLayout>

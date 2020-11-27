@@ -1,6 +1,7 @@
 package com.example.aawaz;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -10,13 +11,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-public class TrackerActivity extends Activity {
+public class TrackerActivity extends AppCompatActivity{
 
     private static final int PERMISSIONS_REQUEST = 1;
 
