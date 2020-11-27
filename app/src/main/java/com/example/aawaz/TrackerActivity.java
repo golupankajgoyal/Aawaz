@@ -100,4 +100,15 @@ public class TrackerActivity extends AppCompatActivity{
     }
 
 
+    public void Profile(View view) {
+    }
+
+    public void Maps(View view) {
+    }
+
+    public void Location(View view) {
+    }
+
+    public void logout(View view) {
+    }
 }

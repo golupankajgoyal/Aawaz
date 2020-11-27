@@ -45,6 +45,7 @@
         android:elevation="10dp"
         android:background="@drawable/circle"
         android:padding="10dp"
+        android:onClick="Profile"
         />
 
         <TextView
@@ -73,6 +74,7 @@
         android:elevation="10dp"
         android:background="@drawable/circle"
         android:padding="13dp"
+        android:onClick="Maps"
         />
 
         <TextView
@@ -99,7 +101,8 @@
         android:elevation="10dp"
         android:layout_margin="10dp"
         android:background="@drawable/circle"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:onClick="Location"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -122,7 +125,8 @@
             android:layout_margin="10dp"
             android:elevation="10dp"
             android:background="@drawable/circle"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:onClick="logout"/>
 
         <TextView
             android:layout_width="wrap_content"
