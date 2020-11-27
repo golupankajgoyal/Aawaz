@@ -9,24 +9,24 @@
     android:layout_centerHorizontal="true"
     tools:context=".TrackerActivity">
 
-    <TextView
+    <ImageView
         android:id="@+id/textView"
-        android:layout_width="170dp"
-        android:layout_height="27dp"
-        android:text="AWAAZ"/>
-    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+    <ImageView
         android:id="@+id/textView1"
-        android:layout_width="170dp"
-        android:layout_height="27dp"
-        android:text="AWAAZ"/>
-    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+    <ImageView
         android:id="@+id/textView2"
-        android:layout_width="170dp"
-        android:layout_height="27dp"
-        android:text="AWAAZ"/>
-    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+    <ImageView
         android:id="@+id/textView3"
-        android:layout_width="170dp"
-        android:layout_height="27dp"
-        android:text="AWAAZ"/>
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
 </LinearLayout>
