@@ -4,10 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
     tools:context=".TrackerActivity">
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:text="AWAAZ"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:text="AWAAZ"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:text="AWAAZ"/>
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="170dp"
         android:layout_height="27dp"
         android:text="AWAAZ"/>
