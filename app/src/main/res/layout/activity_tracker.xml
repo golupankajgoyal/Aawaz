@@ -13,14 +13,13 @@
         android:id ="@+id/action_bar"
         android:layout_width = "match_parent"
         android:layout_height = "48dp"
-        android:layout_margin="10dp"
         android:elevation="10dp"
-        android:background="@drawable/rectangle"
+        android:background="#ef9a9a"
         android:text = "AAWAZ"
         android:textColor="@color/black"
         android:fontFamily="@font/atma_medium"
         android:textStyle="bold"
-        android:gravity="center"
+        android:padding="10dp"
         android:textSize = "20sp"/>
 
     <LinearLayout

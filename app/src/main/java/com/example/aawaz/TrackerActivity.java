@@ -18,7 +18,7 @@ import androidx.core.content.ContextCompat;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-public class TrackerActivity extends AppCompatActivity{
+public class TrackerActivity extends Activity{
 
     private static final int PERMISSIONS_REQUEST = 1;
 
