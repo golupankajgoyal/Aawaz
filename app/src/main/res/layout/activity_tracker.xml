@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/aubrey"
+            android:fontFamily="@font/atma_medium"
             android:text="EMERGENCY CONTACTS"
             android:textColor="@color/black"
 
