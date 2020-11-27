@@ -10,7 +10,5 @@
         android:id="@+id/textView"
         android:layout_width="170dp"
         android:layout_height="27dp"
-        android:text="AWAAZ"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="184dp" />
+        android:text="AWAAZ"/>
 </LinearLayout>
