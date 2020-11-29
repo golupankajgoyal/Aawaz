@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Overview category -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".EditorActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorGrey2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_number_editor_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/atma_medium"
+            android:inputType="phone"
+            android:background="@color/lemon"
+            android:hint="Enter Phone No. with +91"
+            android:textColor="@color/colorGrey2" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@color/purple_700"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/atma_medium"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/editor_send_button"/>
+        <!-- Label -->
+    </LinearLayout>

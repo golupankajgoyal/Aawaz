@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcccb"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ProfileActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#ffcccb">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="3dp"
+            android:transitionName="@string/transition_avatar" />
+
+        <TextView
+            android:id="@+id/txt_mrp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="Name :"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/detail_text_size"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/detail_scroll_view"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content"
+        android:paddingTop="500dp">
+
+
+
+        <!-- some skeleton approximating text -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffcccb">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#ffffee"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/atma_medium"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="User Id :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/detail_id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/atma_medium"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="hello"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="Name :"
+                            android:fontFamily="@font/atma_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/detail_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:padding="2dp"
+                            android:text="$250"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="Contact No. :"
+                            android:fontFamily="@font/atma_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/detail_phone"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="$250"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_discount_price"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="Address :"
+                            android:fontFamily="@font/atma_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/detail_address"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="Example Example Example Example"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_quantity_per_packet"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="Aadhar No. :"
+                            android:fontFamily="@font/atma_medium"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/detail_addhar_no"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:text="$250"
+                            android:fontFamily="@font/atma_medium"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/addhar_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="Aadhar Image :"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/user"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/detail_addhar_front"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="Relative 1 Details"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/mobile_no"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="Relative's Name:"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/r1_name_tv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="$250"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/atma_medium"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:text="Relative's Phone No."
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/r1_phone_tv"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/atma_medium"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:text="$250"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/detail_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/detail_top_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:fontFamily="@font/atma_medium"
+                            android:text="Relative 2 Details "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="@dimen/detail_top_margin"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/atma_medium"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:padding="2dp"
+                                android:text="Relative's Name:"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/detail_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/r2_name_tv"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/atma_medium"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:padding="2dp"
+                                android:text="$250"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/detail_text_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="@dimen/detail_top_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:padding="2dp"
+                                android:fontFamily="@font/atma_medium"
+                                android:text="Relative's Phone No."
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/detail_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/r2_phone_tv"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:padding="2dp"
+                                android:fontFamily="@font/atma_medium"
+                                android:text="$250"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/detail_text_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

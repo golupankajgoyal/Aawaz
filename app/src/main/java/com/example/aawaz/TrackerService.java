@@ -10,6 +10,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.location.Location;
 import android.os.IBinder;
 import android.util.Log;
@@ -17,6 +19,8 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.aawaz.Database.PhoneContract;
+import com.example.aawaz.Database.PhoneDbHelper;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -29,6 +33,9 @@ import com.google.firebase.database.FirebaseDatabase;
 public class TrackerService extends Service {
 
     private static final String TAG = TrackerService.class.getSimpleName();
+    private String MY_KEY = "123";
+    private PhoneDbHelper mDbHelper=new PhoneDbHelper(this);
+
 
     @Override
     public IBinder onBind(Intent intent) {return null;}
@@ -83,10 +90,11 @@ public class TrackerService extends Service {
         NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
                 .setContentTitle(getString(R.string.app_name))
+                .setColor(getResources().getColor(R.color.notificationColor))
                 .setContentText(getString(R.string.notification_text))
                 .setOngoing(true)
                 .setContentIntent(broadcastIntent)
-                .setSmallIcon(R.drawable.ic_tracker);
+                .setSmallIcon(R.drawable.women);
         notificationManager.notify(1, builder.build());
 //        startForeground(1, builder.build());
 
@@ -102,17 +110,14 @@ public class TrackerService extends Service {
         }
     };
 
-    private void loginToFirebase() {
-        // Functionality coming next step
-    }
-
     private void requestLocationUpdates() {
         LocationRequest request = new LocationRequest();
-        request.setInterval(4000);
-        request.setFastestInterval(2000);
+        request.setInterval(8000);
+        request.setFastestInterval(4000);
         request.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         FusedLocationProviderClient client = LocationServices.getFusedLocationProviderClient(this);
-        final String path = getString(R.string.firebase_path) + "/" + getString(R.string.transport_id);
+        String mKey=getKey();
+        final String path = getString(R.string.firebase_path) + "/" + mKey;
         int permission = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION);
         if (permission == PackageManager.PERMISSION_GRANTED) {
@@ -132,4 +137,17 @@ public class TrackerService extends Service {
         }
     }
 
+    private String getKey(){
+        String key="";
+        SQLiteDatabase db=mDbHelper.getReadableDatabase();
+        Cursor cursor=db.query(PhoneContract.ItemEntry.LOCAL_TABLE_NAME,null
+                ,null,null,null,null,null);
+
+        if(cursor.moveToFirst()) {
+            int userIdColumnIndex = cursor.getColumnIndex(PhoneContract.ItemEntry.COLUMN_USER_ID);
+            key=cursor.getString(userIdColumnIndex);
+        }
+        cursor.close();
+        return key;
+    }
 }

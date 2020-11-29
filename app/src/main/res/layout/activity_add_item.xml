@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcccb"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill Your Details"
+            android:fontFamily="@font/atma_medium"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorGrey2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/atma_medium"
+                    android:background="#ffffee"
+                    android:hint="Name"
+                    android:textColor="@color/colorGrey2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorGrey2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_phone"
+                    android:hint="Mobile No."
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/atma_medium"
+                    android:background="@color/lemon"
+                    android:textColor="@color/colorGrey2"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:id="@+id/photo_container">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/user"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/photo"
+                        android:contentDescription="TODO" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_green2"
+                        android:elevation="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/image_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Image"
+                            android:fontFamily="@font/atma_medium"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_relative1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:background="@color/lemon"
+                        android:fontFamily="@font/atma_medium"
+                        android:layout_height="wrap_content"
+                        android:hint="Relative 1 Name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_r1phone"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:fontFamily="@font/atma_medium"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon"
+                        android:hint="Relative 1 Mobile No." />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_relative2"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:fontFamily="@font/atma_medium"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon"
+                        android:hint="Relative 2 Name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_r2phone"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:fontFamily="@font/atma_medium"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon"
+                        android:hint="Relative 2 Mobile No." />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="2dp"
+                android:fontFamily="@font/atma_medium"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Address"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_flat_no"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:fontFamily="@font/atma_medium"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lemon"
+                        android:hint="House No." />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_society"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/atma_medium"
+                        android:background="@color/lemon"
+                        android:hint="Society" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_street"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/atma_medium"
+                        android:background="@color/lemon"
+                        android:hint="Street"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Spinner
+                    android:id="@+id/district_spinner"
+                    android:layout_width="0dp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="@color/colorGrey2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_state"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorGrey2"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/atma_medium"
+                        android:text="Meghalaya"
+                        android:hint="State"
+                        android:background="@color/lemon"
+                        android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Do You Want To Be A Saviour? "
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/myRadioGroup"
+                        android:checkedButton="@+id/sound" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/purple_700"
+                            android:id="@+id/sound"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:buttonTint="@color/purple_700"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vibration"
+                            android:text="No" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:background="@color/colorBlack"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/colorGrey2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrey2"
+                    android:inputType="number"
+                    android:fontFamily="@font/atma_medium"
+                    android:background="@color/lemon"
+                    android:hint="Aadhar No."/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical"
+                    android:id="@+id/addhar_container">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/id_card"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/aadhar"
+                        android:contentDescription="TODO" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_green2"
+                        android:elevation="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/addhar_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Addhar"
+                            android:fontFamily="@font/atma_medium"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:fontFamily="@font/atma_medium"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
